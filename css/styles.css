@@ -3,10 +3,29 @@ body {
   text-align: center;
 }
 
+.main-view {
+  height: 1000px;
+  width: 100%;
+  /* background: url("../images/justice_lady.jpg") no-repeat;  */
+  position: relative;
+}
 
 /* Navigation Bar*/
 .navbar {
   padding: 1.5rem;
+  /* background-color: #D5D4CA; */
+}
+
+.navbar-toggler-icon {
+  color: #402616;
+}
+
+nav a {
+  color: #402616;
+}
+
+nav a:hover {
+  color: white;
 }
 
 .navbar-brand {
@@ -19,5 +38,26 @@ body {
 }
 
 .nav-link {
-  font-size: 1.1rem; 
+  font-size: 1.1rem;
+}
+
+.container-fluid {
+  padding: 7% 15%;
+}
+
+#title .container-fluid {
+  padding: 5% 10% 7%;
+}
+
+
+.big-heading {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 3.5rem;
+  padding: 15% 15% 3%;
+  font-weight: 900;
+  line-height: 1.5;
+}
+
+.title-image {
+  width: 100%;
 }
