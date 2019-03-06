@@ -37,6 +37,9 @@ nav a {
   position: relative;
   /* left: 80px; */
   top: 80px;
+  height: 70%;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
 }
 
 
@@ -68,7 +71,7 @@ nav a {
 
 #features {
   position: relative;
-  background-color: #EEE3D9;
+  /* background-color: #EEE3D9; */
 }
 
 .feature-container {
@@ -78,4 +81,12 @@ nav a {
 .feature-heading {
   font-size: 1.5rem;
   font-weight: 700;
+}
+
+.feature-icon {
+  margin-bottom: 1rem;
+}
+
+.feature-text {
+  line-height: 2;
 }
