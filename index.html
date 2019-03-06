@@ -8,8 +8,7 @@
   <link rel="shortcut icon" href="images\BRE_favicon.ico">
 
   <!-- Google Fonts  -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|PT+Sans:400,700|PT+Serif:400,700" rel="stylesheet">
-
+  <link href="https://fonts.googleapis.com/css?family=Fjalla+One|Open+Sans" rel="stylesheet">
 
   <!-- CSS Stylesheets -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -21,8 +20,10 @@
 </head>
 
 <body>
-  <section class="colored-section" id="title">
+  <section class="colored-section" id="landing-page">
+    <div class="container-fluid">
     <!-- Nav Bar -->
+    <!-- TODO: Correct Dropdown menu links -->
     <nav class="navbar navbar-expand-lg">
       <a class="navbar-brand" href="index.html">BRE Law</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -31,7 +32,7 @@
       <div class="collapse navbar-collapse" id="navbarNavDropdown">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="family-law.html" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <a class="nav-link" href="family-law.html" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               Family Law
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
@@ -41,7 +42,7 @@
             </div>
           </li>
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="criminal-law.html" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <a class="nav-link" href="criminal-law.html" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               Criminal Law
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
@@ -53,7 +54,7 @@
             </div>
           </li>
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" role="button" href="personal-injury.html" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <a class="nav-link" role="button" href="personal-injury.html" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               Personal Injury
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
@@ -65,7 +66,7 @@
           <li class="nav-item active">
             <a class="nav-link" href="about.html">About<span class="sr-only">(current)</span></a>
           </li>
-          <li class="nav-item active">
+          <li class="nav-item">
             <a class="nav-link" href="blog.html">Blog<span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item">
@@ -74,24 +75,22 @@
         </ul>
       </div>
     </nav>
-
     <!-- Title Page -->
-    <div class="main-view">
-      <div class="container-fluid">
-        <div class="row">
-          <div class="col-lg-6">
-            <h1 class="big-heading">Giving Your Voice Power</h1>
-            <button type="button" class="btn btn-secondary btn-lg schedule-btn"> <i class="far fa-calendar-alt"></i>Schedule a Consulation</button>
-          </div>
-          <div class="col-lg-6">
-            <img src="./images/lady-justice-statue.png" alt="bronze statue of lady of justice" class="title-image">
 
+
+        <div class="row billboard">
+
+          <div class="col-lg-6 billboard-text">
+            <h1 class="big-heading">Family Law. Criminal Law. Personal Injury.</h1>
+            <h4 class="landing-subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</h4>
+            <button type="button" class="btn btn-secondary btn-lg schedule-btn"> <i class="far fa-calendar-alt calender-icon"></i>Schedule a Consulation</button>
+          </div>
+
+          <div class="col-lg-6">
+            <img src="./images/lady-justice-statue.png" class="landing-image" alt="Bronze Statue Lady Of Justice">
           </div>
 
         </div>
-
-      </div>
-
 
     </div>
 
@@ -103,8 +102,8 @@
   <section class="white-section" id="features">
     <div class="container-fluid">
       <div class="row">
-        <div class="col-lg-4">
-          <i class="fas fa-users fa-7x"></i>
+        <div class="col-lg-4 feature-container">
+          <i class="fas fa-users fa-5x feature-icon"></i>
           <h2 class="feature-heading">Family Law</h2>
           <p class="feature-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
             commodo consequat. Duis aute irure dolor in reprehenderit in.</p>
@@ -112,8 +111,8 @@
 
         </div>
 
-        <div class="col-lg-4">
-          <i class="fas fa-gavel fa-7x"></i>
+        <div class="col-lg-4 feature-container">
+          <i class="fas fa-gavel fa-5x feature-icon"></i>
           <h2 class="feature-heading">Criminal Law</h2>
           <p class="feature-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
             commodo consequat.</p>
@@ -121,8 +120,8 @@
 
         </div>
 
-        <div class="col-lg-4">
-          <i class="fas fa-user-injured fa-7x"></i>
+        <div class="col-lg-4 feature-container">
+          <i class="fas fa-user-injured fa-5x feature-icon"></i>
           <h2 class="feature-heading">Personal Injury</h2>
           <p class="feature-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
           <a href="personal-injury.html" class="btn btn-primary btn-lg feature-button" role="button" aria-pressed="true">Learn More</a>
