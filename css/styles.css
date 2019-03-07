@@ -9,6 +9,7 @@ body {
 
 #landing-page .container-fluid {
   padding-left: 30px;
+  padding-right: 30px;
   /* background-color: #9F756A; */
 }
 
@@ -70,7 +71,13 @@ nav a {
 }
 
 #features {
+  padding: 2%;
+}
+
+#features .container-fluid {
   position: relative;
+  padding-left: 30px;
+  padding-right: 30px;
   /* background-color: #EEE3D9; */
 }
 
@@ -89,4 +96,22 @@ nav a {
 
 .feature-text {
   line-height: 2;
+}
+
+#cta {
+  padding: 2%;
+}
+
+#cta .container-fluid {
+  padding: 20px 30px;
+}
+
+.cta-headline {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.profile-image {
+  margin-top: 15px;
+  margin-bottom: 15px;
 }

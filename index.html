@@ -136,20 +136,16 @@
   <section class="colored-section" id="cta">
     <div class="container-fluid">
       <h2 class="cta-headline">Your Dedicated Legal Ally</h2>
-      <img src="https://via.placeholder.com/150" alt="">
-      <p class="cta-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      <img class="profile-image" src="https://via.placeholder.com/150" alt="Brenda Evans Attorney At Law">
+      <p class="cta-text">Legal problems can make you feel powerless when they threaten your welfare and your goals. Without legal experience, you may not know what your rights are or how to protect them. This is not a challenge you have to face alone.</p>
 
       <a href="#" class="btn btn-primary btn-lg about-bre-btn" role="button" aria-pressed="true">About BRE Law</a>
-      <a href="#" class="btn btn-primary btn-lg schedule-btn" role="button" aria-pressed="true">Schedule a Consulation</a>
-
-
     </div>
 
   </section>
 
   <!-- Testimonials -->
-  <section class="white-section" id="testimonals">
+  <!-- <section class="white-section" id="testimonals">
     <div class="container fluid">
       <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
         <div class="carousel-inner">
@@ -173,47 +169,76 @@
 
       </div>
 
-  </section>
+  </section> -->
 
   <!-- Consult-Form -->
   <section class="colored-section" id="consult-form">
     <div class="container-fluid">
-      <h2 class="consult-form-heading">We Are Here To Help</h2>
-      <h3 class="consult-subheading">Get the knowledge and support you deserve.</h3>
+      <div class="row">
+        <div class="col-md-12">
+          <h2 class="consult-form-heading">We Are Here To Help</h2>
+          <h3 class="consult-subheading">Get the knowledge and support you deserve.</h3>
+        </div>
+      </div>
 
-      <form>
-        <div class="form-row">
-          <div class="form-group col-md-12">
-            <label for="inputPassword4"></label>
-            <input type="text" class="form-control" id="inputPassword4" placeholder="Name">
-          </div>
+      <div class="row">
+        <div class="col-md-6">
+          <form>
+            <div class="form-group">
+              <label for="name" class="sr-only">Name</label>
+              <input type="text" class="form-control" id="name" placeholder="Name">
+            </div>
+            <div class="form-group">
+              <label for="email" class="sr-only">Email</label>
+              <input type="text" class="form-control" id="email" pattern="^\w+@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$" placeholder="Email">
+            </div>
+            <div class="form-group">
+              <label for="phone" class="sr-only">Phone</label>
+              <input type="tel" class="form-control" id="phone" pattern="^\D?(\d{3})\D?\D?(\d{3})\D?(\d{4})$" placeholder="404-555-5555">
+            </div>
+            <div class="form-group">
+              <label for="Message" class="sr-only">Message</label>
+              <textarea class="form-control" id="message" rows="3" placeholder="Your message"></textarea>
+            </div>
+            <div class="form-group">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="disclaimer">
+                <label class="form-check-label" for="disclaimer">I have read the disclaimer.</label>
+              </div>
+              <button type="button" class="btn btn-link" data-toggle="modal" data-target="#disclaimerModal">Disclaimer</button>
+              <a href="privacy-policy.html">Privacy Policy</a>
+            </div>
+            <button type="submit" class="btn btn-primary form-submit">Contact Us</button>
+          </form>
+        </div>
 
-        </div>
-        <div class="form-row">
-          <div class="form-group col-md-6">
-            <label for="inputEmail4"></label>
-            <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+        <div class="col-md-6">
+          <div class="row">
+            <div class="col-sm-6">
+              <div class="card">
+                <div class="card-header">Duluth,GA Office</div>
+                  <div class="card-body">
+                    <h5 class="card-title">2730 N. Berkley Lake Road B1200 Duluth, GA 30096</h5>
+                    <p class="card-text">Phone: 678-369-0535</p>
+                    <p class="card-text">Fax: 888-270-0998</p>
+                    <a href="#" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Map & Directions</a>
+                  </div>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="card">
+                <div class="card-header">Roswell, GA Office</div>
+                <div class="card-body">
+                  <h5 class="card-title">760 Old Roswell Rd Roswell, GA 30076</h5>
+                  <p class="card-text">By appointment only.</p>
+                  <a href="#" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Map & Directions</a>
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="form-group col-md-6">
-            <label for="inputPhone"></label>
-            <input type="phone-number" class="form-control" id="inputCity" placeholder="Phone">
-          </div>
         </div>
-        <div class="form-group">
-          <label for="exampleFormControlTextarea1"></label>
-          <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Your message"></textarea>
-        </div>
-        <div class="form-group">
-          <div class="form-check">
-            <input class="form-check-input" type="checkbox" id="gridCheck">
-            <label class="form-check-label" for="gridCheck">
-              I have read the<button type="button" class="btn btn-link" data-toggle="modal" data-target="#exampleModal">disclaimer</button>. <a href="privacy-policy.html">Privacy Policy</a>.
-            </label>
-          </div>
-        </div>
-        <button type="submit" class="btn btn-primary">Contact Us</button>
-      </form>
-
+      </div>
+    </div>
   </section>
 
   <footer>
@@ -221,28 +246,6 @@
     <div class="row">
       <div class="col-md-12">
         <h3 class="footer-headline">BRE Law</h3>
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="col-md-12">
-        <h5>Locations</h5>
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="col-md-6">
-        <h4 class="footer-address">Duluth,GA Office</h4>
-        <p class="footer-text">2730 N. Berkley Lake Road B1200 Duluth, GA 30096</p>
-        <p class="footer-phone">Phone: 678-369-0535</p>
-        <p class="footer-phone">Fax: 888-270-0998</p>
-        <a href="#" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Map & Directions</a>
-      </div>
-      <div class="col-md-6">
-        <h4 class="footer-address">Roswell, GA Office</h4>
-        <p>By appointment only</p>
-        <p class="footer-text">760 Old Roswell Rd Roswell, GA 30076</p>
-        <a href="#" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Map & Directions</a>
       </div>
     </div>
 
@@ -317,11 +320,11 @@
 
 
   <!-- Disclaimer Modal -->
-  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal fade" id="disclaimerModal" tabindex="-1" role="dialog" aria-labelledby="disclaimerModalLabel" aria-hidden="true">
     <div class="modal-dialog" role="document">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">Disclaimer</h5>
+          <h5 class="modal-title" id="disclaimerModalLabel">Disclaimer</h5>
           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true">&times;</span>
           </button>
