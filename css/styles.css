@@ -85,11 +85,6 @@ nav a {
   padding: 5%;
 }
 
-.feature-heading {
-  font-size: 1.5rem;
-  font-weight: 700;
-}
-
 .feature-icon {
   margin-bottom: 1rem;
 }
@@ -106,12 +101,37 @@ nav a {
   padding: 20px 30px;
 }
 
-.cta-headline {
-  font-size: 1.5rem;
-  font-weight: 700;
-}
 
 .profile-image {
   margin-top: 15px;
   margin-bottom: 15px;
+}
+
+#contact {
+  padding: 2%;
+}
+
+#contact .container-fluid {
+  padding: 20px 30px;
+}
+
+.consult-form-heading {
+  padding-bottom: 8px;
+}
+
+.consult-subheading {
+  padding-bottom: 8px;
+  margin-bottom: 32px;
+}
+
+#footer {
+  padding-top: 2%;
+}
+
+#footer .container-fluid {
+  padding: 20px 30px 0;
+}
+
+.copyright-wrapper {
+  padding: 2%;
 }
