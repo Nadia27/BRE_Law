@@ -5,12 +5,20 @@ body {
   overflow-x: hidden;
 }
 
-
-
 #landing-page .container-fluid {
   padding-left: 30px;
   padding-right: 30px;
   /* background-color: #9F756A; */
+}
+
+/* .navbar-nav > li.dropdown:hover > a,
+.navbar-nav > li.dropdown:hover > a:hover,
+.navbar-nav > li.dropdown:hover > a:focus {
+    background-color: rgb(231, 231, 231);
+    color: rgb(85, 85, 85);
+} */
+.dropdown:hover > .dropdown-menu {
+    display: block;
 }
 
 nav a {
